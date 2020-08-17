@@ -78,8 +78,25 @@ svg {
   letter-spacing: 0.03em;
 }
 
+.modal-form-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .modal-form-label:not(:last-child) {
   margin-bottom: 28px;
+}
+
+.modal-form-label:focus-within .modal-form-input {
+  outline: none;
+  border: 1px solid #2196F3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form-label:focus-within .modal-form-label-svg {
+  fill: #2196f3;
 }
 
 .modal-form-input {
@@ -92,17 +109,7 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
-
-.modal-form-label:focus-within .modal-form-input {
-  outline: none;
-  border: 1px solid #2196F3;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.modal-form-label:focus-within .modal-form-label-svg {
-  fill: #2196f3;
+  color: #757575;
 }
 
 .modal-form-label-svg {
@@ -121,16 +128,6 @@ svg {
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-}
-
-.modal-form-input {
-  color: #757575;
-}
-
-.modal-form-label {
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .form-svg-email {
@@ -176,6 +173,14 @@ svg {
   color: #2196f3;
 }
 
+.modal-form-label-textarea:focus-within .modal-form-message {
+  outline: none;
+  color: #757575;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .modal-form-message {
   resize: none;
   outline: none;
@@ -188,6 +193,7 @@ svg {
   padding-right: 16px;
   padding-bottom: 12px;
   padding-top: 12px;
+  color: #757575;
 }
 
 .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments {
@@ -195,14 +201,6 @@ svg {
   color: #2196f3;
   font-size: 12px;
   line-height: 1.14;
-}
-
-.modal-form-label-textarea:focus-within .modal-form-message {
-  outline: none;
-  color: #757575;
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .modal-form-label-textarea-comments {
@@ -253,7 +251,7 @@ svg {
   color: #757575;
 }
 
-.modal-form-checkbox-text > a {
+.modal-form-checkbox-text a {
   color: #2196f3;
 }
 
@@ -323,7 +321,7 @@ svg {
   color: #000000;
 }
 
-.navigation .logo-color {
+.logo-color {
   color: #2196f3;
 }
 
@@ -762,6 +760,12 @@ svg {
 .addres-footer-map {
   padding: 0px;
   margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .list-item-addres-footer {
@@ -773,15 +777,6 @@ svg {
   height: 80px;
   margin-top: 72px;
   margin-left: 69px;
-}
-
-.addres-footer-map {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
 }
 
 .addres-footer-mail,
@@ -872,11 +867,11 @@ svg {
   background-color: #2F303A;
 }
 
-.footer-form-subscribe input::placeholder {
+.footer-form-subscribe input {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-subscribe input {
+.footer-form-subscribe input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -899,13 +894,10 @@ svg {
 }
 
 .footer-subscribe-btn-svg {
+  display: flex;
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-
-.footer-subscribe-btn-svg {
-  display: flex;
 }
 
 /*Стили для страницы портфоли "Portfolio.html"*/

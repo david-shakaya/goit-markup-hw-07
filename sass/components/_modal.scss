@@ -38,8 +38,26 @@
     letter-spacing: 0.03em;
   }
   
-  .modal-form-label:not(:last-child) {
-    margin-bottom: 28px
+  .modal-form-label {
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 28px
+    }
+
+    &:focus-within .modal-form-input{
+      outline: none;
+      border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+
+    &:focus-within .modal-form-label-svg{
+      fill: $accent-color;
+    }
   }
   
   .modal-form-input {
@@ -53,19 +71,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    color: $title-gray-words-color;
   }
-  
-  .modal-form-label:focus-within .modal-form-input{
-    outline: none;
-    border: 1px solid #2196F3;
-  box-sizing: border-box;
-  border-radius: 4px;
-  }
-  
-  
-  .modal-form-label:focus-within .modal-form-label-svg{
-    fill: $accent-color;
-  }
+    
   
   .modal-form-label-svg {
     fill: $title-dark-words-color;
@@ -84,17 +92,6 @@
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-  }
-  
-  .modal-form-input {
-    color: $title-gray-words-color;
-  }
-  
-  .modal-form-label {
-    position: relative;
-  
-    display: flex;
-    align-items: center;
   }
   
   .form-svg-email {
@@ -131,12 +128,21 @@
     position: relative;
     height: 120px;
     margin-bottom: 20px;
-  }
-  .modal-form-label-textarea:focus-within .modal-form-label-textarea-comments{
-    transform: translate(-446px, -30px);
-    font-size: 12px;
-    line-height: 1.14;
-    color: $accent-color;
+
+    &:focus-within .modal-form-label-textarea-comments{
+      transform: translate(-446px, -30px);
+      font-size: 12px;
+      line-height: 1.14;
+      color: $accent-color;
+    }
+
+    &:focus-within .modal-form-message {
+      outline: none;
+      color: $title-gray-words-color;
+      border: 1px solid $accent-color;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
   }
   
   .modal-form-message {
@@ -152,6 +158,7 @@
     padding-right: 16px;
     padding-bottom: 12px;
     padding-top: 12px;
+    color: $title-gray-words-color;
   }
   
   .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments{
@@ -160,15 +167,6 @@
     font-size: 12px;
     line-height: 1.14;
   }
-  
-  .modal-form-label-textarea:focus-within .modal-form-message {
-    outline: none;
-    color: $title-gray-words-color;
-    border: 1px solid $accent-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  
   
   .modal-form-label-textarea-comments {
     position: absolute;
@@ -217,10 +215,10 @@
     letter-spacing: 0.03em;
   
     color: #757575;
-  }
-  
-  .modal-form-checkbox-text > a {
-    color: $accent-color;
+
+    a {
+      color: $accent-color;
+    }
   }
   
   
