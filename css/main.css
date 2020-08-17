@@ -434,7 +434,7 @@ svg {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero-wrapper .hero-title {
   width: 696px;
   height: 120px;
   margin-left: auto;
@@ -447,7 +447,6 @@ svg {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* Цвет текста должен быть белый но пока оставлю по умолчанию*/
 }
 
 .btn-hero {
@@ -468,7 +467,7 @@ svg {
 }
 
 /*Преймущества*/
-.benefits .list-benefits {
+.list-benefits {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -524,12 +523,12 @@ svg {
   height: 294px;
 }
 
-.about-us-list-item:not(:last-child) {
-  margin-right: 30px;
+.about-us-list .about-us-list-item {
+  position: relative;
 }
 
-.about-us-list-item {
-  position: relative;
+.about-us-list .about-us-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .title {
@@ -577,14 +576,14 @@ svg {
   padding-top: 94px;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-list-item {
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-list-item-img {
@@ -609,21 +608,6 @@ svg {
   height: 44px;
 }
 
-.social-link-list-item-svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.social-link-list-item .link:hover {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-
-.link:hover .social-link-list-item-svg {
-  fill: #ffffff;
-}
-
 .social-link-list-item .link {
   display: flex;
   align-items: center;
@@ -631,6 +615,21 @@ svg {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.social-link-list-item .link:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.social-link-list-item .link:hover .social-link-list-item-svg {
+  fill: #ffffff;
+}
+
+.social-link-list-item-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 .subtitle-team {
@@ -683,6 +682,16 @@ svg {
   border-radius: 4px;
 }
 
+.client-list-item .link:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.client-list-item .link:hover .client-link-svg {
+  fill: #2196f3;
+}
+
 .client-link-svg {
   fill: #afb1b8;
 }
@@ -690,19 +699,6 @@ svg {
 .client-section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.link:hover {
-  fill: #2196f3;
-}
-
-.link:hover .client-link-svg {
-  fill: #2196f3;
-}
-
-.client-list-item .link:hover {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
 
 .svg-1 {

@@ -17,8 +17,7 @@
   .hero-wrapper {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-  
+    
   .hero-title {
     width: 696px;
     height: 120px;
@@ -33,9 +32,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $title-light-words-color;
-    /* Цвет текста должен быть белый но пока оставлю по умолчанию*/
   }
   
+  }
+
   .btn-hero {
     display: block;
     width: 200px;

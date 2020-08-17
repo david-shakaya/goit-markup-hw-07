@@ -8,14 +8,14 @@
     display: flex;
     padding-bottom: 94px;
     height: 294px;
-  }
+
+    .about-us-list-item {
+      position: relative;
   
-  .about-us-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .about-us-list-item {
-    position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
   
   .title {

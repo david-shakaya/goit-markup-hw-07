@@ -10,22 +10,32 @@
   .client-list-item {
     width: 170px;
     height: 90px;
-  }
-  
-  .client-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .client-list-item .link {
-    box-sizing: border-box;
-    width: 170px;
-    height: 90px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  
-    border: solid 1px #afb1b8;
-    border-radius: 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .link {
+      box-sizing: border-box;
+      width: 170px;
+      height: 90px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    
+      border: solid 1px #afb1b8;
+      border-radius: 4px;
+    }
+
+    .link:hover {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+    }
+    
+    .link:hover .client-link-svg {
+      fill: $accent-color;
+    }
   }
   
   .client-link-svg {
@@ -35,19 +45,6 @@
   .client-section {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  
-  .link:hover {
-    fill: $accent-color;
-  }
-  
-  .link:hover .client-link-svg {
-    fill: $accent-color;
-  }
-  
-  .client-list-item .link:hover {
-    border: 1px solid $accent-color;
-    border-radius: 4px;
   }
   
   .svg-1 {

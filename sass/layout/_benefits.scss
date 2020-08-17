@@ -1,7 +1,7 @@
 
 /*Преймущества*/
 
-.benefits .list-benefits {
+ .list-benefits {
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -10,9 +10,10 @@
   .list-item-benefits {
     width: 270px;
     height: 251px;
-  }
-  .list-item-benefits:not(:last-child) {
-    margin-right: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   .list-item-benefits-svg {
