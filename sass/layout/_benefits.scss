@@ -35,7 +35,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-dark-words-color);
+    color: $title-dark-words-color;
   
     margin-bottom: 10px;
   }
@@ -44,7 +44,7 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--title-gray-words-color);
+    color: $title-gray-words-color;
   
     margin: 0px;
   }

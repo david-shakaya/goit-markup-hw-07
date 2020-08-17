@@ -58,7 +58,7 @@
   }
   
   .social-link-list-item .link:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 50%;
   }
   
@@ -83,7 +83,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-dark-words-color);
+    color: $title-dark-words-color;
   }
   
   .text-team {
@@ -95,5 +95,5 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-gray-words-color);
+    color: $title-gray-words-color;
   }

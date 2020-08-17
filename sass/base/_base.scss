@@ -1,9 +1,9 @@
 
 body {
-    background-color: var(--title-light-words-color);
-    font-family: var(--main-font);
+    background-color: $title-light-words-color;
+    font-family: $main-font;
     font-size: 14px;
-    color: var(--title-dark-words-color);
+    color: $title-dark-words-color;
   }
   
   .header-wrapper .link,

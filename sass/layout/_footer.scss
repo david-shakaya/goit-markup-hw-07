@@ -1,7 +1,7 @@
 /* Подвал сайта*/
 
 .logo-footer {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -49,7 +49,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
   }
   
   .addres-footer-mail,
@@ -68,7 +68,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
   }
   
   .footer-social-link-list {
@@ -85,7 +85,7 @@
   }
   
   .footer-social-link-svg {
-    fill: var(--title-light-words-color);
+    fill: $title-light-words-color;
     width: 20px;
     height: 20px;
   }
@@ -101,7 +101,7 @@
   }
   
   .footer-social-link-link:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .footer-subscribe-wrapper {
@@ -115,7 +115,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
   }
   .footer-subscribe-wrapper-form {
     margin-top: 20px;
@@ -157,7 +157,7 @@
     margin-left: 12px;
     padding-left: 29px;
    
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

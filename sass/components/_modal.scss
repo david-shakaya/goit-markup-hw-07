@@ -64,30 +64,30 @@
   
   
   .modal-form-label:focus-within .modal-form-label-svg{
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .modal-form-label-svg {
-    fill: var(--title-dark-words-color);
+    fill: $title-dark-words-color;
   }
   
   
   .modal-form-input:not(:placeholder-shown) ~ .modal-form-label-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .modal-form-label:focus-within .modal-form-label-text,
   .modal-form-input:not(:placeholder-shown) + .modal-form-label-text{
     transform: translateY(-30px);
     left: 16px;
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.01em;
   }
   
   .modal-form-input {
-    color: var(--title-gray-words-color);
+    color: $title-gray-words-color;
   }
   
   .modal-form-label {
@@ -136,7 +136,7 @@
     transform: translate(-446px, -30px);
     font-size: 12px;
     line-height: 1.14;
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .modal-form-message {
@@ -156,15 +156,15 @@
   
   .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments{
     transform: translate(-446px, -30px);
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 12px;
     line-height: 1.14;
   }
   
   .modal-form-label-textarea:focus-within .modal-form-message {
     outline: none;
-    color: var(--title-gray-words-color);
-    border: 1px solid var(--accent-color);
+    color: $title-gray-words-color;
+    border: 1px solid $accent-color;
     box-sizing: border-box;
     border-radius: 4px;
   }
@@ -197,7 +197,7 @@
     height: 15px;
     width: 15px;
     box-sizing: border-box;
-    border: solid var(--title-dark-words-color) 2px;
+    border: solid $title-dark-words-color 2px;
     border-radius: 1px;
     margin-right: 8.5px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,7 +209,7 @@
     height: 15px;
     width: 15px;
     border: none;
-    background-color: var(--accent-color); 
+    background-color: $accent-color; 
   }
   
   .modal-form-checkbox-text {
@@ -220,7 +220,7 @@
   }
   
   .modal-form-checkbox-text > a {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   
@@ -228,7 +228,7 @@
     width: 200px;
     height: 50px;
     
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

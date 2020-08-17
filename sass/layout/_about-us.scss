@@ -24,7 +24,7 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-dark-words-color);
+    color: $title-dark-words-color;
   }
   
   .subtitle-about-us {
@@ -34,7 +34,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-light-words-color);
+    color: $title-light-words-color;
     /*background-color сделал для наглядности в дальнейшем уберется*/
     background-color: rgba(47, 48, 58, 0.8);
   

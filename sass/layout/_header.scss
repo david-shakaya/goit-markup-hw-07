@@ -10,7 +10,7 @@
   }
   
   .logo {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -20,7 +20,7 @@
   }
   
   .logo-color {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   /* Меню*/
@@ -38,13 +38,13 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-dark-words-color);
+    color: $title-dark-words-color;
   }
   
   .menu-link-portfolio::after {
     content: "";
     display: block;
-  border-bottom: 4px solid var(--accent-color);
+  border-bottom: 4px solid $accent-color;
   border-radius: 4px;
   width: 100%;
   margin-top: 28px;
@@ -55,7 +55,7 @@
   .menu-link-studio::after {
     content: "";
     display: block;
-  border-bottom: 4px solid var(--accent-color);
+  border-bottom: 4px solid $accent-color;
   border-radius: 4px;
   width: 100%;
   margin-top: 28px;
@@ -64,7 +64,7 @@
   }
   .link:hover,
   .link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   /*Контакты*/
@@ -82,23 +82,23 @@
   .header-adress-mail-svg {
     width: 16px;
     height: 11.2px;
-    fill: var(--title-gray-words-color);
+    fill: $title-gray-words-color;
     margin-right: 10px;
   }
   
   .header-adress-link:hover .header-adress-mail-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .header-adress-tel-svg {
     width: 10px;
     height: 15px;
-    fill: var(--title-gray-words-color);
+    fill: $title-gray-words-color;
     margin-right: 10px;
   }
   
   .header-adress-link:hover .header-adress-tel-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .header-adress-list:not(:last-child) {
@@ -112,6 +112,6 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-gray-words-color);
+    color: $title-gray-words-color;
   }
   
