@@ -314,9 +314,6 @@ svg {
 
 .navigation .logo {
   margin-right: 85px;
-}
-
-.logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -326,7 +323,7 @@ svg {
   color: #000000;
 }
 
-.logo-color {
+.navigation .logo-color {
   color: #2196f3;
 }
 
@@ -391,19 +388,11 @@ svg {
   margin-right: 10px;
 }
 
-.header-adress-link:hover .header-adress-mail-svg {
-  fill: #2196f3;
-}
-
 .header-adress-tel-svg {
   width: 10px;
   height: 15px;
   fill: #757575;
   margin-right: 10px;
-}
-
-.header-adress-link:hover .header-adress-tel-svg {
-  fill: #2196f3;
 }
 
 .header-adress-list:not(:last-child) {
@@ -418,6 +407,14 @@ svg {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.header-adress-link:hover .header-adress-tel-svg {
+  fill: #2196f3;
+}
+
+.header-adress-link:hover .header-adress-mail-svg {
+  fill: #2196f3;
 }
 
 /*Герой*/
