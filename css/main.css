@@ -941,8 +941,7 @@ svg {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
@@ -956,24 +955,18 @@ svg {
   margin-bottom: 94px;
 }
 
-.list-portfolio > li {
+.list-portfolio li {
   width: calc((100% - 60px) / 3);
   height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-/*  width: 370px;
-    height: 404px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  */
-.list-portfolio > li:nth-child(3n) {
+.list-portfolio li:nth-child(3n) {
   margin-right: 0px;
 }
 
-.list-portfolio > li:nth-last-child(-n + 3) {
+.list-portfolio li:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
 
@@ -1006,7 +999,7 @@ svg {
   overflow: hidden;
 }
 
-.wrapper-opacity > img {
+.wrapper-opacity img {
   display: block;
 }
 
