@@ -9,13 +9,14 @@
     padding-bottom: 94px;
     height: 294px;
 
-      &:not(:last-child) {
-        margin-right: 30px;
-    }
   }
   
 .about-us-list-item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
   .title {
