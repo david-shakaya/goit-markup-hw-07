@@ -9,15 +9,15 @@
     padding-bottom: 94px;
     height: 294px;
 
-    .about-us-list-item {
-      position: relative;
-  
       &:not(:last-child) {
         margin-right: 30px;
-      }
     }
   }
   
+.about-us-list-item {
+  position: relative;
+}
+
   .title {
     font-weight: 700;
     font-size: 36px;

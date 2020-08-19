@@ -17,8 +17,8 @@ ul,
 h1,
 h2,
 h3 {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -521,12 +521,12 @@ svg {
   height: 294px;
 }
 
-.about-us-list .about-us-list-item {
-  position: relative;
+.about-us-list:not(:last-child) {
+  margin-right: 30px;
 }
 
-.about-us-list .about-us-list-item:not(:last-child) {
-  margin-right: 30px;
+.about-us-list-item {
+  position: relative;
 }
 
 .title {
@@ -1037,9 +1037,9 @@ svg {
 }
 
 .text-portfolio {
+  display: inline;
   width: 322px;
   height: 30px;
-  margin: 0px;
   margin-left: 24px;
   font-weight: 400;
   font-size: 16px;
