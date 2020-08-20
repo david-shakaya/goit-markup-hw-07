@@ -35,11 +35,31 @@ svg {
 }
 
 .container {
-  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .backdrop {
@@ -302,117 +322,6 @@ svg {
 .close-btn-svg > use {
   position: absolute;
   transform: translate(6px, 6px);
-}
-
-/*Логотип*/
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation .logo {
-  margin-right: 85px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.logo-color {
-  color: #2196f3;
-}
-
-/* Меню*/
-.menu {
-  display: flex;
-}
-
-.menu-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu-link {
-  position: relative;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.menu-link-portfolio::after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid #2196f3;
-  border-radius: 4px;
-  width: 100%;
-  margin-top: 28px;
-  position: absolute;
-}
-
-.menu-link-studio::after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid #2196f3;
-  border-radius: 4px;
-  width: 100%;
-  margin-top: 28px;
-  position: absolute;
-}
-
-.link:hover,
-.link:focus {
-  color: #2196f3;
-}
-
-/*Контакты*/
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  height: 81px;
-}
-
-.header-adress {
-  display: flex;
-  align-items: center;
-}
-
-.header-adress-mail-svg {
-  width: 16px;
-  height: 11.2px;
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.header-adress-tel-svg {
-  width: 10px;
-  height: 15px;
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.header-adress-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.header-adress-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.header-adress-link:hover .header-adress-tel-svg {
-  fill: #2196f3;
-}
-
-.header-adress-link:hover .header-adress-mail-svg {
-  fill: #2196f3;
 }
 
 /*Герой*/
