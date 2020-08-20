@@ -430,12 +430,21 @@ svg {
   height: 294px;
 }
 
+<<<<<<< HEAD
 .about-us-list .about-us-list-item {
   position: relative;
 }
 
 .about-us-list .about-us-list-item:not(:last-child) {
   margin-right: 30px;
+=======
+.about-us-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-list-item {
+  position: relative;
+>>>>>>> parent of fa3646f... Правки ментора +
 }
 
 .title {
